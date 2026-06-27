@@ -9,7 +9,7 @@ jobs:
 
     steps:
       - name: Checkout Repository
-        run: actions/checkout@v4
+        uses: actions/checkout@v4
 
       - name: print current directory
         run: pwd
