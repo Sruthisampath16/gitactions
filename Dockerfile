@@ -1,2 +1,2 @@
 FROM ubuntu
-CMD["echo","hello this is Docker"] 
+CMD ["echo","hello this is Docker"] 
