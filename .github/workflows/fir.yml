@@ -1,4 +1,4 @@
-name: Linux Commands
+name: Checkout Demo
 
 on:
   push:
@@ -8,17 +8,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Show Date
-        run: date
+      - name: Checkout Repository
+        run: actions/checkout@v4
 
-      - name: Show Current Directory
+      - name: print current directory
         run: pwd
 
-      - name: List Files
+      - name: List Repository Files
         run: ls -la
 
-      - name: Show User
-        run: whoami
-
-      - name: Show OS
-        run: uname -a
+      - name: Display app.txt
+        run:  cat app.txt
